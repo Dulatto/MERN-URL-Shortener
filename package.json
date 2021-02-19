@@ -1,0 +1,23 @@
+{
+  "name": "mern-url-shortener",
+  "version": "1.0.0",
+  "description": "MERN URL Shortener",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dulatto/MERN-URL-Shortener.git"
+  },
+  "keywords": [
+    "mern",
+    "react"
+  ],
+  "author": "Dulat Omarov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dulatto/MERN-URL-Shortener/issues"
+  },
+  "homepage": "https://github.com/Dulatto/MERN-URL-Shortener#readme"
+}
