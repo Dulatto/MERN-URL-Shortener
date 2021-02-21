@@ -41,8 +41,41 @@ try {
 })
 
 // /api/auth/login
-router.post('login', async (req, res) =>{
+router.post('login',
+[
+ check('email', 'Enter the correct email'), normalizeEmail().isEmail(),
+ check('password', 'Enter the password').exists()
+],
+ async (req, res) =>{
+    try {
+        const errors = validationResult(req)
+    
+        if(errors.isEmpty()){
+            return res.status(400).json({
+                errors:errors.array(),
+                message: 'Data is incorrect during the enter in system'
+            })
+        }
+       
+        const{email, password} = req.body
 
+        const user = await User.findOne({ email})
+
+        if(!user){
+            return res.status(400).json({message: 'User was not found'})
+        }
+
+        const isMatch = await bcrypt.compare(password, user.password)
+
+        if(!isMatch){
+            return res.status(400),json({message:'Invalid password, try again'})
+        }
+
+        
+        
+    } catch (e) {
+        res.status(500).json({message:'Something are getting wrong, try again'})
+    }
 })
 
 module.exports = router
