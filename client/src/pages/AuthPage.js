@@ -5,15 +5,16 @@ export const AuthPage = () =>{
         <div classNameName="row">
             <div classNameName="col s6 offset-s3">
                 <h1>Link Shortify</h1>
-                <div classNameName="card blue-grey darken-1">
+                <div classNameName="card blue darken-1">
         <div className="card-content white-text">
-          <span className="card-title">Card Title</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <span className="card-title">Autorization</span>
+         <div>
+
+         </div>
         </div>
         <div className="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
+          <button className="btn yellow darken-4">Login</button>
+          <button className="btn grey lighten-1 black-text">Registration</button>
         </div>
       </div>
             </div>
