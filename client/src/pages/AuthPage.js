@@ -5,7 +5,7 @@ export const AuthPage = () =>{
         <div classNameName="row">
             <div classNameName="col s6 offset-s3">
                 <h1>Link Shortify</h1>
-                <div classNameName="card blue darken-1">
+                <div className="card blue darken-1">
         <div className="card-content white-text">
           <span className="card-title">Autorization</span>
          <div>
