@@ -4,3 +4,6 @@ input.yellow-input{
     border-bottom: 1px solid #fff!important;
     box-shadow: 0 1px 00 #fff!important ;
 }
+input.yellow-input + label{
+    color: #fff!important;
+}
