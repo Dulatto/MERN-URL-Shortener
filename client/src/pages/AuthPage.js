@@ -13,7 +13,7 @@ export const AuthPage = () =>{
          </div>
         </div>
         <div className="card-action">
-          <button className="btn yellow darken-4">Login</button>
+          <button className="btn yellow darken-4" style={{marginRight:10}}>Login</button>
           <button className="btn grey lighten-1 black-text">Registration</button>
         </div>
       </div>
