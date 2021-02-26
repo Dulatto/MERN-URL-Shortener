@@ -10,6 +10,26 @@ export const AuthPage = () =>{
           <span className="card-title">Autorization</span>
          <div>
 
+         <div className="input-field">
+          <input 
+          placeholder="Enter email"
+           id="email"
+            type="text"
+            name="email" 
+            className="yellow-input"/ >
+          <label htmlFor="email">Email</label>
+        </div>
+
+        <div className="input-field">
+          <input 
+          placeholder="Enter password"
+           id="password"
+            type="password"
+            name="password"
+            className="yellow-input" / >
+          <label htmlFor="password">Password</label>
+        </div>
+
          </div>
         </div>
         <div className="card-action">
