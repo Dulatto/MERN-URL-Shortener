@@ -7,3 +7,10 @@ input.yellow-input{
 input.yellow-input + label{
     color: #fff!important;
 }
+input.yellow-input:focus{
+    border-bottom: 1px solid #ffeb3b!important;
+    box-shadow: 0 1px 00 #ffeb3b!important ;
+}
+input.yellow-input:focus + label{
+    color: #ffeb3b!important;
+}
