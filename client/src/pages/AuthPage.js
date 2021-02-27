@@ -1,6 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 export const AuthPage = () =>{
+   const [form, setForm]= useState({
+
+   })
+
     return (
         <div classNameName="row">
             <div classNameName="col s6 offset-s3">
