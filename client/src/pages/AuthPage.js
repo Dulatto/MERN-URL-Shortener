@@ -9,6 +9,8 @@ export const AuthPage = () =>{
        setForm({...form, [event.target.name]: event.target.value})
    }
 
+   
+
     return (
         <div classNameName="row">
             <div classNameName="col s6 offset-s3">
