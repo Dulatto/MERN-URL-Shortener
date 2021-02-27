@@ -2,8 +2,12 @@ import React, {useState} from 'react'
 
 export const AuthPage = () =>{
    const [form, setForm]= useState({
-
+    email: '', password:''
    })
+
+   const changeHandler = event => {
+       setForm({...form, [event.target.name]: event.target.value})
+   }
 
     return (
         <div classNameName="row">
@@ -20,7 +24,8 @@ export const AuthPage = () =>{
            id="email"
             type="text"
             name="email" 
-            className="yellow-input"/ >
+            className="yellow-input"
+            onChange={changeHandler}/ >
           <label htmlFor="email">Email</label>
         </div>
 
@@ -30,7 +35,8 @@ export const AuthPage = () =>{
            id="password"
             type="password"
             name="password"
-            className="yellow-input" / >
+            className="yellow-input" 
+            onChange={changeHandler}/ >
           <label htmlFor="password">Password</label>
         </div>
 
