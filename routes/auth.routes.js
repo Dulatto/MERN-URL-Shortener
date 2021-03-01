@@ -50,6 +50,7 @@ router.post('login',
 ],
  async (req, res) =>{
     try {
+       
         const errors = validationResult(req)
     
         if(errors.isEmpty()){
@@ -82,7 +83,7 @@ router.post('login',
     res.json({ token, userId: user.id})
         
     } catch (e) {
-        res.status(500).json({message:'Something are getting wrong, try again'})
+        return res.status(500).json({message:'Something are getting wrong, try again'})
     }
 })
 
