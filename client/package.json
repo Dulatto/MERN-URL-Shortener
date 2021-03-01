@@ -20,12 +20,9 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"   
   },
- "proxy": "http://localhost:5000/",
+ "proxy": "http://localhost:5000",
   "browserslist": {
     "production": [
       ">0.2%",

@@ -43,7 +43,8 @@ try {
 })
 
 // /api/auth/login
-router.post('login',
+router.post(
+    '/login',
 [
  check('email', 'Enter the correct email'), normalizeEmail().isEmail(),
  check('password', 'Enter the password').exists()
@@ -83,7 +84,7 @@ router.post('login',
     res.json({ token, userId: user.id})
         
     } catch (e) {
-        return res.status(500).json({message:'Something are getting wrong, try again'})
+        res.status(500).json({message:'Something are getting wrong, try again'})
     }
 })
 
